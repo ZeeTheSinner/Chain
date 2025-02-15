@@ -1,0 +1,24 @@
+game:GetService("RunService").RenderStepped:Connect(function()
+                if _G.sprintvalrtl == true then
+                    if game.Players.LocalPlayer.Character:FindFirstChild("Aspects") then
+                        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Aspects.SprintSpeed.Value
+                    else
+                        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 29.25
+                    end
+                end
+            end)
+
+            game:GetService("UserInputService").InputBegan:Connect(function(key)
+                if key.KeyCode == Enum.KeyCode.LeftShift then
+                    _G.sprintvalrtl = true
+                end
+            end)
+
+            game:GetService("UserInputService").InputEnded:Connect(function(key)
+                if key.KeyCode == Enum.KeyCode.LeftShift then
+                    _G.sprintvalrtl = false
+                    if game.Players.LocalPlayer.Character:FindFirstChild("Aspects") then
+                        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Aspects.WalkSpeed.Value
+                    end
+                end
+            end)
