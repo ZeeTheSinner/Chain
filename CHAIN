@@ -1,0 +1,6 @@
+game:GetService("RunService").RenderStepped:Connect(function()
+if workspace.Misc.AI.CHAIN:FindFirstChild("Highlight") then
+workspace.Misc.AI.CHAIN.Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop 
+workspace.Misc.AI.CHAIN.Highlight.OutlineTransparency = 0
+end
+end)
