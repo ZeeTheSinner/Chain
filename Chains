@@ -1,0 +1,48 @@
+local paradox = loadstring(game:HttpGet("https://raw.githubusercontent.com/paradoxroblox/paradox/refs/heads/discord.gg/paradoxroblox/library"))()
+
+local window = paradox:window()
+
+paradox:tab({
+	name = "CHAIN",
+	image = "rbxassetid://10723407389"
+})
+
+paradox:button({
+	name = "Chain",
+	description = "Able To See Chain.",
+	parent = "CHAIN",
+	callback = function()
+                       loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeeTheSinner/Chain/refs/heads/main/Chain%20Esp'))()
+		print("clicked")
+	end,
+})
+
+paradox:button({
+	name = "People",
+	description = "Able To See People.",
+	parent = "CHAIN",
+	callback = function()
+                       loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeeTheSinner/Chain/refs/heads/main/Esp'))()
+		print("clicked")
+	end,
+})
+
+paradox:button({
+	name = "Stamina",
+	description = "I Can Go Anywhere If I Want.",
+	parent = "CHAIN",
+	callback = function()
+                       loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeeTheSinner/Chain/refs/heads/main/Stamina'))()
+		print("clicked")
+	end,
+})
+
+paradox:button({
+	name = "Scrap",
+	description = "Able To See Scraps.",
+	parent = "CHAIN",
+	callback = function()
+                       loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeeTheSinner/Chain/refs/heads/main/Scraps'))()
+		print("clicked")
+	end,
+})
