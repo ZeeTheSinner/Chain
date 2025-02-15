@@ -1,0 +1,4 @@
+for i, v in pairs(workspace.Misc.Zones.LootingItems.Scrap:GetChildren()) do
+local highlight = Instance.new("Highlight")
+highlight.Parent = v
+end
