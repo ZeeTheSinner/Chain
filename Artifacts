@@ -1,0 +1,8 @@
+for i, v in pairs(workspace.Misc.Zones.LootingItems.Artifacts:GetChildren()) do
+local highlight = Instance.new("Highlight")
+highlight.Parent = v
+highlight.FillColor = Color3.fromRGB(170, 0, 255)
+highlight.FillTransparency = 0.5
+highlight.OutlineColor = Color3.fromRGB(170, 0, 255)
+highlight.OutlineTransparency = 0
+end
